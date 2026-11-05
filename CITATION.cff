@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use BSG-RL, please cite the accompanying paper."
+title: "BSG-RL"
+type: software
+version: 0.1.0
+date-released: 2026-11-05
+authors:
+  - family-names: Dong
+    given-names: Li
+  - family-names: Huang
+    given-names: Yanyan
+  - family-names: Khan
+    given-names: Muhammad Azam
+  - family-names: Li
+    given-names: Hui
+preferred-citation:
+  type: article
+  title: "Binding-Semantic Graph Reinforcement Learning over Colored Petri Nets: Application to Flexible Job-Shop Scheduling"
+  authors:
+    - family-names: Dong
+      given-names: Li
+    - family-names: Huang
+      given-names: Yanyan
+    - family-names: Khan
+      given-names: Muhammad Azam
+    - family-names: Li
+      given-names: Hui
+  year: 2026

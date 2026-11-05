@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bsg-rl"
+version = "0.1.0"
+description = "Binding-semantic graph reinforcement learning over colored Petri nets"
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+license = {text = "Apache-2.0"}
+authors = [
+  {name = "Li Dong"},
+  {name = "Yanyan Huang"},
+  {name = "Muhammad Azam Khan"},
+  {name = "Hui Li"},
+]
+dependencies = [
+  "numpy>=1.24,<3",
+  "torch>=2.6",
+]
+
+[project.optional-dependencies]
+gympn = [
+  "torch-geometric>=2.6",
+  "gymnasium>=1.0,<2",
+  "simpn>=1.10,<2",
+  "networkx>=3.0",
+  "scipy>=1.10",
+]
+experiments = [
+  "pandas>=1.5",
+  "matplotlib>=3.7",
+]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["CPNModelV2*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
