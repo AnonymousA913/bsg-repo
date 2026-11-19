@@ -23,6 +23,8 @@ The `core` package is part of the release because enabled bindings and state
 evolution are defined by the executable CPN rather than reconstructed by the
 policy code.
 
+The amount of experimental data and test models is quite large, and these will be released successively in the future. Furthermore, since we used a large number of scripts for parallel training and testing, there might be issues with incomplete configuration of the uploaded files. Some codes and files will be modified and re-uploaded after review.
+
 ## Installation
 
 Python 3.9 is the reference environment.
